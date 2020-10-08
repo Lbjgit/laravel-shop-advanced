@@ -31,12 +31,13 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 
     Route::get('payment/{order}/alipay', 'PaymentController@payByAlipay')->name('payment.alipay');
     Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');
-    Route::post('payment/{order}/installment', 'PaymentController@payByInstallment')->name('payment.installment');
 
     Route::get('coupon_codes/{code}', 'CouponCodesController@show')->name('coupon_codes.show');
 
     Route::post('crowdfunding_orders', 'OrdersController@crowdfunding')->name('crowdfunding_orders.store');
 
+    Route::post('payment/{order}/installment', 'PaymentController@payByInstallment')->name('payment.installment');
+    Route::get('installments', 'InstallmentsController@index')->name('installments.index');
 });
 
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
