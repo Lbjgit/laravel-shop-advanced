@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="150c815f-1f04-40c6-83ab-53886aecc3bc" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SearchBuilders/ProductSearchBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SearchBuilders/ProductSearchBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,24 +29,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/CommonProductsController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="526">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding>
-                <element signature="e#41#86#0#PHP" expanded="true" />
+                <element signature="e#40#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Migrate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="513">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Indices/ProjectIndex.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
-                <element signature="e#40#63#0#PHP" expanded="true" />
+                <element signature="e#53#76#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,15 +84,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="508">
               <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -117,16 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/products/favorites.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>InternalException</find>
       <find>order-summary text-right</find>
       <find>apiIndex</find>
       <find>.search-form</find>
@@ -156,6 +155,7 @@
       <find>&lt;div class=&quot;product-detail&quot;&gt;</find>
       <find>.products-list</find>
       <find>.products-show-page</find>
+      <find>reb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/UserAddress.php" />
-        <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_10_08_005755_orders_add_type.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Listeners/UpdateCrowdfundingProductProgress.php" />
@@ -204,7 +202,6 @@
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php" />
         <option value="$PROJECT_DIR$/app/Jobs/SyncOneProductToES.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/CommonProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
@@ -215,6 +212,9 @@
         <option value="$PROJECT_DIR$/app/Services/ProductService.php" />
         <option value="$PROJECT_DIR$/app/Models/Product.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Migrate.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Indices/ProjectIndex.php" />
       </list>
     </option>
   </component>
@@ -679,12 +679,12 @@
       <workItem from="1602062831843" duration="3481000" />
       <workItem from="1602083037961" duration="2239000" />
       <workItem from="1602116363499" duration="24217000" />
-      <workItem from="1602200788917" duration="17696000" />
+      <workItem from="1602200788917" duration="21722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139821000" />
+    <option name="totallyTimeSpent" value="143847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1417" extended-state="0" />
@@ -722,20 +722,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_08_053215_create_installments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_08_053245_create_installment_items_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="22" column="105" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -993,16 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding>
-            <element signature="e#53#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/SyncOneProductToES.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -1084,11 +1060,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="526">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="e#40#63#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/SyncProducts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding>
+            <element signature="e#53#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Migrate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Elasticsearch/Indices/ProjectIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="50" />
         </state>
       </provider>
     </entry>
